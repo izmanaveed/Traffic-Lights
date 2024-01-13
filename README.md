@@ -1,4 +1,4 @@
-# Traffic-Lights
+# Traffic Lights Project
 Our project has two parts:  
 1-Implementation of a single-way traffic control system on a breadboard  
 2-Implementation of 4-way traffic control system on FPGA
@@ -38,11 +38,18 @@ A 0.01 microF is connected to pin 5. Its other end is connected to the negative 
 Pins 2 and 6 are shorted. One end of this short circuit is connected to a 47 microF capacitor, whose other end is connected to the negative terminal of the battery, and its other end is connected to a 22k resistor. One end of the 22k resistor is connected to pin 7 of the IC which is further connected to another 22k resistor which is then connected with the positive end of the battery.
 
 ## CIRCUIT DIAGRAM:
-![image](https://github.com/izmanaveed/Traffic-Lights-DLD/assets/59065717/03a6010b-268b-42bd-a8ea-a3d089108e73)
+![image](https://github.com/izmanaveed/Traffic-Lights-DLD/assets/59065717/a43b1490-bad9-46ec-8799-fa8f90f09a5b)
+
+![proteus](https://github.com/izmanaveed/Traffic-Lights-DLD/assets/59065717/e01c100b-01aa-4aff-bcf6-99f31cb9e77a)
+
+## WORKING:
+This traffic light is made with the help of counter IC, which is mainly used for Sequential Circuits. We can also call it as Sequential Traffic Lights. Sequential Circuits are used to count the numbers in the series. Coming to the working principle of Traffic Lights, the main IC is 4017 counter IC which is used to glow the Red, yellow and green LED respectively. 555 timer acts as a pulse generator providing an input to the 4017 counter IC. Timing of glow of certain lights depends upon the 555 timer’s pulse. LEDs are not connected directly with 4017 counter, as the lights won’t be stable. Main drawback of this circuit is that you can never have an exact timing with this, however you will have best estimated.
 
 
 # PART 2: IMPLEMENTATION OF -WAY TRAFFIC CONTROL SYSTEM ON FPGA
+### State Table:
 ![image](https://github.com/izmanaveed/Traffic-Lights-DLD/assets/59065717/734b8d83-709b-4cfe-8f72-f14eff195dad)
+### Time Delay: 
 ![image](https://github.com/izmanaveed/Traffic-Lights-DLD/assets/59065717/f9a4a062-a064-4799-b713-919a26943eaf)
 
 
